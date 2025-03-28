@@ -34,14 +34,15 @@ data = signals.values
 eeg = data[:,2]
 
 # Filtro de todos los valores solo aquellos que son efectivamente mayores a 50
-eegf1 = eeg[eeg>50]
+eegf1 = eeg[eeg>50] ##cantidad
 
 # Muchas veces lo que me interesa es saber los índices (que en series de tiempo representan el tiempo) donde el filtro es positivo
 # Esto se hace con el comando np.where
-idxeeg1f = np.where( eeg > 50 )
+idxeeg1f = np.where( eeg > 50 )  ##cuando ...a su vez puede repetirse durante la duracion de la onda entonces tengo que encontrar una manera de clusterizarlo
+                                 ##como son datos fisicos 
 
 # Filtro los valores que son mayores a 10 y menores que -40
-eegf2 = eeg[np.logical_or(eeg>10,eeg<-40)] 
+eegf2 = eeg[np.logical_or(eeg>10,eeg<-40)] ## los que vann paa abajo 
 
 print("Largo 1 %2d" % len(eeg))
 print("Largo 2 %2d" % len(eegf1))
