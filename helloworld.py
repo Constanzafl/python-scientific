@@ -12,7 +12,7 @@ Python se puede correr desde 5 lugares
 5- Google Collab (u otros cloud providers).
 
 
-
+####
 -------------------------------------------
 Un Holamundo de Data Science tiene que tener,
 

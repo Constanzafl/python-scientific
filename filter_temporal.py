@@ -2,7 +2,7 @@
 ==================
 Temporal Filters
 ==================
-
+#####
 Basic filtering is boolean filters to filter the matrices.
 Convolution is a basic tool to implement any kind of filter.
 
